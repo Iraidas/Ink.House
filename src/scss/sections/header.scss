@@ -1,0 +1,41 @@
+.header {
+    background: var(--light-green);
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 33px;
+        padding-bottom: 33px;
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+        cursor: default;
+    }
+    &__logo-name {
+        font-family: Raleway, sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        color: var(--green);
+        margin-left: 8px;
+    }
+    &__menu {
+        display: flex;
+        align-items: center;
+        gap: 0 60px;
+        margin-right: 60px;
+    }
+    &__menu-item-link {
+        font-family: Raleway;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        color: var(--dark-gray);
+    }
+    &__basket {
+        cursor: pointer;
+    }
+}

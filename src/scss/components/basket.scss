@@ -1,0 +1,52 @@
+.basket {
+    display: block;
+    width: 25px;
+    height: 24px;
+    border-radius: 2px;
+    position: relative;
+    svg {
+        padding-top: 1px;
+    }
+}
+
+.basket_active {
+    &::before {
+        content: '';
+        width: 13px;
+        top: 3px;
+        left: 1px;
+        height: 13px;
+        border-radius: 50%;
+        background: var(--green);
+        position: absolute;
+        text-align: center;
+        font-family: Raleway, sans-serif;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        color: white;
+    }
+}
+
+@media ($device-hover) and ($device-pointer) {
+    .basket {
+        &:hover {
+            path {
+                stroke: var(--green);
+            }
+        }
+        &:focus {
+            background: var(--middle-green);
+            outline: none;
+            path {
+                stroke: var(--green);
+            }
+        }
+        &:active {
+            path {
+                stroke: var(--dark-green);
+            }
+        }
+    }
+}

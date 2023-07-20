@@ -1,0 +1,97 @@
+.footer {
+    padding-top: 23px;
+    padding-bottom: 23px;
+    background: var(--light-green);
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__contact-info {
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+    }
+    &__logo-img {
+    }
+    &__logo-name {
+        font-family: Raleway, sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        color: var(--green);
+        margin-left: 8px;
+    }
+    &__number {
+        font-family: Raleway, sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        font-style: normal;
+        color: var(--dark-gray);
+        margin-top: 35px;
+    }
+    &__link {
+        font-family: Raleway, sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        color: var(--light-gray);
+        margin-top: 8px;
+    }
+    &__links-group {
+        display: flex;
+        margin-right: auto;
+        margin-left: 115px;
+        gap: 0 60px;
+    }
+    &__links-group-title {
+        font-family: Raleway, sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        color: var(--dark-gray);
+    }
+    &__link-list {
+        display: flex;
+        flex-direction: column;
+        gap: 6px 0;
+        margin-top: 6px;
+    }
+    &__link-item {
+    }
+    &__links-item-link {
+        font-family: Raleway, sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        color: var(--light-gray);
+    }
+    &__social-links {
+    }
+    &__social-links-list {
+        display: flex;
+        gap: 0 30px;
+    }
+    &__social-item {
+    }
+    &__social-item-link {
+    }
+    &__copyright {
+        display: flex;
+        flex-direction: column;
+        font-family: Raleway, sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        color: var(--light-gray);
+        margin-top: 10px;
+    }
+    &__copyright-name {
+    }
+    &__copyright-rights {
+    }
+}

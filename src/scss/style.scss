@@ -1,0 +1,22 @@
+@import "reset";
+@import "vars";
+@import "global";
+@import "components";
+@import "fonts";
+@import "vendors";
+
+@import "sections";
+
+:root {
+    --light-green: #E1EDE6;
+    --middle-green: #D4E8D9;
+    --green: #598D66;
+    --dark-green: #376B44;
+    --light-gray: #86928B;
+    --dark-gray: #2C2D35;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}

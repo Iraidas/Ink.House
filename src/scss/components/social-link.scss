@@ -1,0 +1,29 @@
+.social-link {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 2px;
+}
+
+@media ($device-hover) and ($device-pointer) {
+    .social-link {
+        &:hover {
+            path {
+                fill: var(--green);
+            }
+        }
+        &:focus {
+            background: var(--middle-green);
+            outline: none;
+            path {
+                fill: var(--green);
+            }
+        }
+        &:active {
+            background: none;
+            path {
+                fill: var(--dark-green);
+            }
+        }
+    }
+}
