@@ -1,0 +1,30 @@
+.button-1 {
+    max-width: min-content;
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 20px 60px;
+    color: var(--green);
+    border: 1px solid var(--green);
+}
+
+@media ($device-hover) and ($device-pointer) {
+    .button-1 {
+        &:hover {
+            color: #F4F6F5;
+            background: var(--green);
+            cursor: pointer;
+        }
+        &:focus {
+            background: var(--middle-green);
+            outline: none;
+            color: var(--green);
+        }
+        &:active {
+            background: var(--dark-green);
+            color: white;
+        }
+    }
+}
