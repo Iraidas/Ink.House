@@ -1,0 +1,47 @@
+@media screen and (max-width: 511px) {
+    .menu {
+        &__button {
+            position: relative;
+            z-index: 5;
+            padding-top: 16px;
+            padding-left: 16px;
+            padding-bottom: 16px;
+            background: var(--light-green);
+        }
+        &__button::before,
+        &__button::after,
+        &__button span {
+            content: "";
+            width: 21px;
+            background: #4C5866;
+            display: block;
+            height: 2px;
+            border-radius: 3px;
+            margin: 6px 0;
+            transition: 0.5s;
+        }
+        &__body {
+            position: absolute;
+            padding-top: 30px;
+            padding-left: 16px;
+            height: calc(100lvh - 129px);
+            min-height: 365px;
+            transition: 0.5s;
+            transform: translateY(-100%);
+            width: 100%;
+            background: var(--light-green);
+        }
+        &__body_active {
+            transform: translate(0px, 0px);
+        }
+        &__button_active::before {
+            transform: translateY(8px) rotate(135deg);
+        }
+        &__button_active::after {
+            transform: translateY(-8px) rotate(-135deg)
+        }
+        &__button_active span {
+            transform: scale(0);
+        }
+    }
+}

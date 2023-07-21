@@ -21,21 +21,91 @@
         color: var(--green);
         margin-left: 8px;
     }
-    &__menu {
+    &__menu-list {
         display: flex;
         align-items: center;
-        gap: 0 60px;
+        gap: 0 50px;
         margin-right: 60px;
-    }
-    &__menu-item-link {
-        font-family: Raleway;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        color: var(--dark-gray);
     }
     &__basket {
         cursor: pointer;
+    }
+}
+
+@media screen and #{$tab-land} {
+    .header {
+		&__menu-item-link {
+            font-size: 18px;
+		}
+    }
+}
+
+@media screen and (max-width: 691px) {
+    .header {
+		&__container {
+            flex-wrap: wrap;
+            padding-top: 16px;
+            padding-bottom: 16px;
+		}
+		&__logo {
+            width: 100%;
+            padding-bottom: 16px;
+            margin-bottom: 17px;
+            border-bottom: 1px solid var(--light-gray);
+		}
+		&__logo-img {
+            margin-left: auto;
+		}
+		&__logo-name {
+            margin-right: auto;
+		}
+		&__menu-list {
+            margin-right: 0;
+            padding-right: 100%;
+		}
+		&__menu-item-link {
+            font-size: 18px;
+		}
+    }
+}
+
+@media screen and #{$mobile} {
+    .header {
+        &__container {
+            padding: 0;
+		}
+		&__logo {
+            padding-top: 16px;
+            background: white;
+            border: none;
+            z-index: 5;
+            margin-bottom: 0px;
+		}
+		&__menu-body {
+            padding-top: 30px;
+            padding-left: 16px;
+            height: calc(100lvh - 129px);
+            min-height: 365px;
+            width: 100%;
+        }
+		&__menu-list {
+            flex-direction: column;
+            align-items: start;
+            gap: 50px 0;
+		}
+		&__menu {
+            width: 80%;
+        }
+        &__menu-icon {
+            padding-top: 16px;
+            padding-left: 16px;
+            padding-bottom: 16px;
+        }
+        &__menu-item-link {
+            padding: 0;
+        }
+		&__basket {
+            margin-right: 16px;
+		}
     }
 }

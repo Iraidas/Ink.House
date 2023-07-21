@@ -1,0 +1,28 @@
+.menu-link {
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--dark-gray);
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+@media ($device-hover) and ($device-pointer) {
+    .menu-link {
+        &:hover {
+            color: var(--green);
+            cursor: pointer;
+        }
+        &:focus {
+            background: var(--middle-green);
+            outline: none;
+            color: var(--dark-gray);
+        }
+        &:active {
+            color: var(--dark-green);
+            background: none;
+        }
+    }
+}

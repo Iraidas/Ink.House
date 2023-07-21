@@ -3,13 +3,17 @@ header.header
         .header__logo
             img.header__logo-img(src="@img/Logo-House.png" alt="Логотип Ink.House" width="35" height="35")
             p.header__logo-name Ink. House
-        ul.header__menu
-            li.header__menu-item
-                a.header__menu-item-link(href="#") Репродукции
-            li.header__menu-item
-                a.header__menu-item-link(href="#") Новинки
-            li.header__menu-item
-                a.header__menu-item-link(href="#") О нас
+        .header__menu.menu
+            .header__menu-icon.menu__button
+                span
+            nav.header__menu-body.menu__body
+                ul.header__menu-list
+                    li.header__menu-item
+                        a.header__menu-item-link.menu-link(href="#" data-goto=".items") Репродукции
+                    li.header__menu-item
+                        a.header__menu-item-link.menu-link(href="#" data-goto=".novelties") Новинки
+                    li.header__menu-item
+                        a.header__menu-item-link.menu-link(href="#" data-goto=".about") О нас
         a.header__basket.basket
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_3_996)">
