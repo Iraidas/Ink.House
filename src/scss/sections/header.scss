@@ -29,6 +29,7 @@
     }
     &__basket {
         cursor: pointer;
+        z-index: 10;
     }
 }
 
@@ -40,7 +41,7 @@
     }
 }
 
-@media screen and (max-width: 691px) {
+@media screen and #{$tab-port} {
     .header {
 		&__container {
             flex-wrap: wrap;
@@ -78,7 +79,7 @@
             padding-top: 16px;
             background: white;
             border: none;
-            z-index: 5;
+            z-index: 10;
             margin-bottom: 0px;
 		}
 		&__menu-body {
