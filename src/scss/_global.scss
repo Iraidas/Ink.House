@@ -2,7 +2,7 @@ body,
 html {
     height: 100%
 }
- 
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -18,7 +18,19 @@ html {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1080px;
     margin: 0 auto;
     padding: 0 15px
+}
+
+@media screen and #{$tab-land} {
+    .container {
+        padding: 0 39px
+    }
+}
+
+@media screen and #{$mobile} {
+    .container {
+        padding: 0 15px
+    }
 }

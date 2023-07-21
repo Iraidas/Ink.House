@@ -1,32 +1,34 @@
 footer.footer
     .footer__container.container
+        .footer__logo 
+            img.footer__logo-img(src="@img/Logo-House.png" alt="Логотип Ink.House" width="35" height="35")
+            p.footer__logo-name Ink. House
         .footer__contact-info 
-            .footer__logo 
-                img.footer__logo-img(src="@img/Logo-House.png" alt="Логотип Ink.House" width="35" height="35")
-                p.footer__logo-name Ink. House
             p.footer__number +7 (999) 543-54-54
             a.footer__link Мастерская
-        .footer__links-group 
-            .footer__links-group-title Репродукции
-                ul.footer__link-list
-                    li.footer__link-item
-                        a.footer__links-item-link(href="#") Франция
-                    li.footer__link-item
-                        a.footer__links-item-link(href="#") Германия
-                    li.footer__link-item
-                        a.footer__links-item-link(href="#") Англия
-            .footer__links-group-title Новинки
-                ul.footer__link-list
-                    li.footer__link-item
-                        a.footer__links-item-link(href="#") 2021
-                    li.footer__link-item
-                        a.footer__links-item-link(href="#") 2020
-            .footer__links-group-title О нас
-                ul.footer__link-list
-                    li.footer__link-item
-                        a.footer__links-item-link(href="#") Художники
-                    li.footer__link-item
-                        a.footer__links-item-link(href="#") Менеджеры
+        .footer__links-group
+            a.footer__links-group-title.menu-link(href="#" data-goto=".items") Репродукции
+            ul.footer__link-list
+                li.footer__link-item
+                    a.footer__links-item-link(href="#") Франция
+                li.footer__link-item
+                    a.footer__links-item-link(href="#") Германия
+                li.footer__link-item
+                    a.footer__links-item-link(href="#") Англия
+        .footer__links-group
+            a.footer__links-group-title.menu-link(href="#" data-goto=".novelties") Новинки
+            ul.footer__link-list
+                li.footer__link-item
+                    a.footer__links-item-link(href="#") 2021
+                li.footer__link-item
+                    a.footer__links-item-link(href="#") 2020
+        .footer__links-group
+            a.footer__links-group-title.menu-link(href="#" data-goto=".about") О нас
+            ul.footer__link-list
+                li.footer__link-item
+                    a.footer__links-item-link(href="#") Художники
+                li.footer__link-item
+                    a.footer__links-item-link(href="#") Менеджеры
         .footer__social-links
             ul.footer__social-links-list
                 li.footer__social-item
