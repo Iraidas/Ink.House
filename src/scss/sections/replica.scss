@@ -27,6 +27,9 @@
         &__title {
             font-size: 30px;
         }
+        &__tabs-list {
+            justify-content: normal;
+        }
         .items {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
