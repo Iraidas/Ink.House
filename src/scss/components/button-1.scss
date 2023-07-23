@@ -8,6 +8,8 @@
     padding: 20px 60px;
     color: var(--green);
     border: 1px solid var(--green);
+    display: block;
+    white-space: nowrap;
 }
 
 @media ($device-hover) and ($device-pointer) {
