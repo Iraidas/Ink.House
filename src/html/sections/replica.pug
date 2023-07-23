@@ -1,0 +1,123 @@
+section.replica
+    .replica__container.container
+        h2.replica__title.title Репродукции
+        .replica__tabs-container
+            ul.replica__tabs-list
+                li.replica__tabs-list-item
+                    a.replica__tabs-list-tab.tab(href="#France" id="tab-1") Франция
+                li.replica__tabs-list-item
+                    a.replica__tabs-list-tab.tab(href="#Germany" id="tab-2") Германия
+                li.replica__tabs-list-item
+                    a.replica__tabs-list-tab.tab(href="#England" id="tab-3") Англия
+        include ../mixins/item-card
+        ul.replica__tabs-panels.items#France(aria-labelledby="tab-1")
+            li.replica__list-item.items__item-card
+                +item('@img/item-1.jpg',
+                'Марсель Руссо',
+                'Охота Амура',
+                'Холст, масло (50х80)',
+                '14 500 руб')(class="replica__list-link")
+            li.replica__list-item.items__item-card
+                +item('@img/item-2.jpg',
+                'Анри Селин',
+                'Дама с собачкой',
+                'Акрил, бумага (50х80)',
+                '16 500 руб')(class="replica__list-link")
+            li.replica__list-item.items__item-card
+                +item('@img/item-3.jpg',
+                'Франсуа Дюпон',
+                'Процедура',
+                'Цветная литография (40х60)',
+                '20 000 руб')(class="replica__list-link")
+            li.replica__list-item.items__item-card
+                +item('@img/item-4.jpg',
+                'Луи Детуш',
+                'Роза',
+                'Бумага, акрил (50х80)',
+                '12 000 руб')(class="replica__list-link")
+            li.replica__list-item.items__item-card
+                +item('@img/item-5.jpg',
+                'Франсуа Дюпон',
+                'Птичья трапеза',
+                'Цветная литография (40х60)',
+                '22 500 руб')(class="replica__list-link")
+            li.replica__list-item.items__item-card
+                +item('@img/item-6.jpg',
+                'Пьер Моранж',
+                'Пейзаж с рыбой',
+                'Цветная литография (40х60)',
+                '20 000 руб')(class="replica__list-link")
+        ul.replica__tabs-panels.items#Germany(aria-labelledby="tab-2")
+            li.replica__list-item.items__item-card
+                +item('@img/item-7.jpg',
+                'Курт Вернер',
+                'Над городом',
+                'Цветная литография (40х60)',
+                '16 000 руб')(class="replica__list-link")
+            li.replica__list-item.items__item-card
+                +item('@img/item-8.jpg',
+                'Макс Рихтер',
+                'Птенцы',
+                'Холст, масло (50х80)',
+                '14 500 руб')(class="replica__list-link")
+            li.replica__list-item.items__item-card
+                +item('@img/item-9.jpg',
+                'Мартин Майер',
+                'Среди листьев',
+                'Цветная литография (40х60)',
+                '20 000 руб')(class="replica__list-link")
+            li.replica__list-item.items__item-card
+                +item('@img/item-10.jpg',
+                'Герман Беккер',
+                'Яркая птица',
+                'Цветная литография (40х60)',
+                '13 000 руб')(class="replica__list-link")
+            li.replica__list-item.items__item-card
+                +item('@img/item-11.jpg',
+                'Вульф Бауэр',
+                'Дятлы',
+                'Бумага, акрил (50х80)',
+                '20 000 руб')(class="replica__list-link")
+            li.replica__list-item.items__item-card
+                +item('@img/item-12.jpg',
+                'Вальтер Хартманн',
+                'Большие воды',
+                'Бумага, акрил (50х80)',
+                '23 000 руб')(class="replica__list-link")
+        ul.replica__tabs-panels.items#England(aria-labelledby="tab-3")
+            li.replica__list-item.items__item-card
+                +item('@img/item-13.jpg',
+                'Пол Смит',
+                'Дикий зверь',
+                'Акварель, бумага (50х80)',
+                '19 500 руб')(class="replica__list-link")
+            li.replica__list-item.items__item-card
+                +item('@img/item-14.jpg',
+                'Джон Уайт',
+                'Скалистый берег',
+                'Цветная литография (40х60)',
+                '17 500 руб')(class="replica__list-link")
+            li.replica__list-item.items__item-card
+                +item('@img/item-15.jpg',
+                'Джим Уотсон',
+                'Река и горы',
+                'Акварель, бумага (50х80)',
+                '20 500 руб')(class="replica__list-link")
+            li.replica__list-item.items__item-card
+                +item('@img/item-16.jpg',
+                'Юджин Зиллион',
+                'Белый попугай',
+                'Цветная литография (40х60)',
+                '15 500 руб')(class="replica__list-link")
+            li.replica__list-item.items__item-card
+                +item('@img/item-17.jpg',
+                'Эрик Гиллман',
+                'Ночная рыба',
+                'Бумага, акрил (50х80)',
+                '12 500 руб')(class="replica__list-link")
+            li.replica__list-item.items__item-card
+                +item('@img/item-18.jpg',
+                'Альфред Барр',
+                'Рыжий кот',
+                'Цветная литография (40х60)',
+                '21 000 руб')(class="replica__list-link")

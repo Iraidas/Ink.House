@@ -1,0 +1,58 @@
+.items {
+    &__item-card {
+        padding: 20px;
+        background: var(--light-green);
+        width: 100%;
+        max-width: 350px;
+        min-width: 250px;
+    }
+    &__item-picture {
+        padding-bottom: 20px;
+        height: auto;
+    }
+    &__item-img {
+        height: auto;
+    }
+    &__item-caption {
+    }
+    &__item-author {
+        font-family: Raleway, sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        color: var(--gray);
+        padding-bottom: 10px;
+    }
+    &__item-name {
+        font-family: Raleway, sans-serif;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        color: var(--dark-gray);
+        padding-bottom: 10px;
+    }
+    &__item-tools {
+        font-family: Raleway, sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        color: var(--dark-gray);
+        padding-bottom: 30px;
+    }
+    &__item-price {
+        font-family: Raleway, sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        color: var(--green);
+        padding-bottom: 20px;
+    }
+    &__item-button {
+        max-width: 100%;
+        text-align: center;
+    }
+}

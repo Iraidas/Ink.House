@@ -1,0 +1,9 @@
+mixin item(src, author, name, tools, price)
+    .items__item-picture
+        img.items__item-img(src= src alt= name width="310" height= "422" loading="lazy")
+    .items__item-caption 
+        p.items__item-author= author 
+        p.items__item-name= name 
+        p.items__item-tools= tools
+        p.items__item-price= price
+        a.items__item-button.button-1 В корзину

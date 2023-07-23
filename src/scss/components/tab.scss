@@ -1,0 +1,42 @@
+.tab {
+    display: block;
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 20px;
+    border: 2px solid var(--middle-green);
+    padding: 6px 16px;
+    color: var(--dark-gray);
+    background: var(--middle-green);
+    max-width: min-content;
+}
+
+.replica [aria-selected="true"] {
+    background: var(--dark-green);
+    border-color: var(--dark-green);
+    color: white;
+}
+
+@media ($device-hover) and ($device-pointer) {
+    .tab {
+        &:hover {
+            color: #F4F6F5;
+            background: var(--green);
+            border-color: var(--green);
+            cursor: pointer;
+        }
+        &:focus {
+            background: var(--middle-green);
+            color: var(--dark-gray);
+            border-color: var(--green);
+            outline: none;
+        }
+        &:active {
+            background: var(--dark-green);
+            border-color: var(--dark-green);
+            color: white;
+        }
+    }
+}
