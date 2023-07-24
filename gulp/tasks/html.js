@@ -1,6 +1,7 @@
 import webpHtmlNosvg from "gulp-webp-html-nosvg";
 import versionNumber from "gulp-version-number";
 import pug from "gulp-pug";
+import typograf from "gulp-typograf";
 
 
 export const html = () => {
@@ -41,6 +42,9 @@ export const html = () => {
                 })
             )
         )
+        .pipe(typograf({
+            locale: ['ru', 'en-US']
+        }))
         .pipe(app.gulp.dest(app.path.build.html))
         .pipe(app.plugins.browsersync.stream());
 }
