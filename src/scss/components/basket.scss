@@ -10,8 +10,10 @@
 }
 
 .basket_active {
-    &::before {
-        content: '';
+    .basket__counter {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
         width: 13px;
         top: 3px;
         left: 1px;
